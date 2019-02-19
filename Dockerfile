@@ -1,4 +1,6 @@
 FROM python:3-alpine
+ARG BASIC_AUTH="user:pass" 
+ENV BASIC_AUTH=${BASIC_AUTH}
 
 COPY proxy.py /app/
 EXPOSE 8899/tcp
