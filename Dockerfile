@@ -7,7 +7,6 @@ WORKDIR /app
 ENTRYPOINT [ "./proxy.py" ]
 CMD [ "--host=0.0.0.0", \
       "--port=8899", \
-      "--basic-auth=user:pass", \
       "--backlog=100", \
       "--server-recvbuf-size=16384", \
       "--client-recvbuf-size=16384", \
